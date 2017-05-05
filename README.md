@@ -3,22 +3,10 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Things ! want to cover:
 
-* Ruby version
+* dont forget to: export GOOGLE_CLIENT_ID= and export GOOGLE_SECRET=
 
-* System dependencies
+* Fetching mail
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Show fetched mail into view
