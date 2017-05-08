@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
 
 	puts user.inspect
 		if user.save
-			redirect_to index_path, notice: "Succesfully login"
+			redirect_to inbox_path, notice: "Succesfully login"
 		else
 			render 'new'
 		end
