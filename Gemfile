@@ -30,7 +30,7 @@ gem "omniauth-google-oauth2"
 gem 'bootstrap-generators', '~> 3.3', '>= 3.3.4'
 gem 'google-api-client', '~> 0.11.2'
 gem 'json', '~> 2.1'
-
+gem 'oauth2'
 
 
 group :development, :test do
