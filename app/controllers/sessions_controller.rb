@@ -1,24 +1,16 @@
+require 'gmail'
+
 class SessionsController < ApplicationController
 
 	def index
-	require 'gmail'
 
-	# user = User.from_omniauth(request.env["omniauth.auth"])
-	# session[:user_id] = user.id
+		user = User.from_omniauth(request.env["omniauth.auth"])
+		session[:user_id] = user.id
 
-	gmail = gmail = Gmail.connect(:xoauth2, gmail, "TOKEN")
+		redirect_to inbox_path
 
-	gmail.inbox.find(:unread).each do |email|
-		puts email.body
-
-		end
-
-	gmail.logout
 	end
 
-	if __FILE__ == $PROGRAM_NAME
-		main()
-	end
 
 	def show
 	end
